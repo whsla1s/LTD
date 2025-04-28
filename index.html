@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>prototipo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>prototipo</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="mostrarTela('home')">Início</a></li>
+                <li><a href="#" onclick="mostrarTela('educacional')">Educacional</a></li>
+                <li><a href="#" onclick="mostrarTela('game')">Game</a></li>
+                <li><a href="#" onclick="mostrarTela('mapa')">Mapa</a></li>
+                <li><a href="#" onclick="mostrarTela('evento')">Evento</a></li>
+                <li><a href="#" onclick="mostrarTela('informacoes')">Informações</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="tela ativa">
+            <h2>Bem-vindo ao site!</h2>
+            <p>Selecione uma aba para ver mais informações.</p>
+        </section>
+
+        <section id="educacional" class="tela">
+            <h2>Educacional</h2>
+            <h3><a href="#" onclick="mostrarTela('matematica')">Matemática</a></h3>
+            <h3><a href="#" onclick="mostrarTela('portugues')">Português</a></h3>
+            <h3><a href="#" onclick="mostrarTela('historia')">História</a></h3>
+            <h3><a href="#" onclick="mostrarTela('ciencias')">Ciências</a></h3>
+            <h3><a href="#" onclick="mostrarTela('geografia')">Geografia</a></h3>
+        </section>
+        
+        <section id="mapa" class="tela">
+            <h2>Mapa</h2>
+            <h3><a href="https://via.placeholder.com/300x200" target="_blank">Mapa da Escola</a></h3>
+            <h3><a href="https://via.placeholder.com/300x200" target="_blank">Mapa da Cidade</a></h3>
+            <h3><a href="https://via.placeholder.com/300x200" target="_blank">Mapa da Biblioteca</a></h3>
+        </section>
+
+        <section id="game" class="tela">
+            <h2>Game</h2>
+            <p>Aqui você encontra jogos educativos e interativos.</p>
+        </section>
+
+        <section id="mapa" class="tela">
+            <h2>Mapa</h2>
+            <ul>
+                <li><a href="https://via.placeholder.com/300x200" target="_blank">Mapa da Escola</a></li>
+                <li><a href="https://via.placeholder.com/300x200" target="_blank">Mapa da Cidade</a></li>
+                <li><a href="https://via.placeholder.com/300x200" target="_blank">Mapa da Biblioteca</a></li>
+            </ul>
+        </section>
+
+        <section id="evento" class="tela">
+            <h2>Evento</h2>
+            <p>Confira os eventos mais recentes da escola!</p>
+        </section>
+
+        <section id="informacoes" class="tela">
+            <h2>Informações</h2>
+            <p>Informações gerais sobre o projeto e a equipe envolvida.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

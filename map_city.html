@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>LTD Início</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="img-logo" src="./image-site/logo_wyden_branco.png" alt="logo-wyden">
+        <ul class="nav-conteiner">
+            <a href="index.html">Início</a>
+            <a href="map.html">Mapa</a>
+            <a href="education.html">Educacional</a>
+            <a href="games.html">Games</a>
+            <a href="information.html">Informações</a>
+            <a href="events.html">Eventos</a>
+        </ul>
+    </header>
+
+    <main>
+        <h1>Mapa da Cidade</h1>
+
+        <div id="map"></div>
+    </main>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        const map = L.map('map').setView([-1.4558, -48.4902], 13); // Mapa em Belém
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        const marker = L.marker([-1.4558, -48.4902]).addTo(map);
+        marker.bindPopup("<b>Olá!</b><br>Estou em Belém.").openPopup();
+
+        map.on('click', function(e) {
+            alert("Você clicou no mapa em: " + e.latlng.toString());
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

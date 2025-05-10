@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>LTD Mapas</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 <body>
     <header class="cabecalho">
@@ -17,12 +18,37 @@
             <a href="events.html">Eventos</a>
         </ul>
       </header>
-      <main>
-            <h2>Mapa</h2>
-            <h3><a href="https://via.placeholder.com/300x200" target="_blank">Mapa da Escola</a></h3>
-            <h3><a href="map_city.html" target="_blank">Mapa da Cidade</a></h3>
-            <h3><a href="https://via.placeholder.com/300x200" target="_blank">Mapa da Biblioteca</a></h3>
+      <main class="main-container">
+        <div id="map"></div>
+        <aside class="sidebar">
+            <h3>Locais</h3>
+            <button onclick="focusMap(-1.459935, -48.489726, 30)">Praça Batista Campos</button>
+            <button onclick="focusMap(-1.45254, -48.494081, 17)">Praça da República</button>
+            <button onclick="focusMap(-1.465089, -48.5054, 17)">Mangál das Garças</button>
+        </aside>
       </main>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        const map = L.map('map').setView([-1.4558, -48.4902], 20); // Mapa em Belém
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        const marker = L.marker([-1.4558, -48.4902]).addTo(map);
+        marker.bindPopup("<b>Olá!</b><br>Estou em Belém.").openPopup();
+
+        function focusMap(lat, lng, zoom) {
+            map.setView([lat, lng], zoom);
+        }
+
+        map.on('click', function(e) {
+            alert("Você clicou no mapa em: " + e.latlng.toString());
+        });
+    </script>
+
+    <script src="script.js"></script>
     
 </body>
 </html>

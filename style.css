@@ -1,0 +1,133 @@
+@import url('config.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: #333;
+}
+
+.cabecalho {
+    background-color: var(--roxo);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+  
+.img-logo {
+    width: 200px;
+    height: auto;
+}
+  
+.nav-conteiner {
+    list-style: none;
+    display: flex;
+    font-size: 25px;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+  
+.nav-conteiner li {
+    font-weight: bold;
+    font-family: var(--font-style);
+}
+
+.nav-conteiner a {
+    color: white;    
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.nav-conteiner a:hover {
+    color: var(--amarelo);
+}
+
+.nav-conteiner .selecionado {
+    color: var(--amarelo);
+    font-weight: bold;
+}
+  
+main {
+  padding: 2rem;
+}
+
+.tela {
+    display: none;
+}
+
+.ativa {
+    display: block;
+}
+
+footer {
+    background-color: var(--azul-escuro);
+    color: #fff;
+    padding: 40px 20px 10px;
+    font-family: var(--font-style);
+    font-size: 14px;
+}
+
+.rodape-conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo-footer {
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+.divisor {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.colunas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.coluna {
+    flex: 1;
+    min-width: 200px;
+    line-height: 1.6;
+}
+
+.icones-sociais {
+    position: absolute;
+    right: 20px;  
+    top: -1px;  
+}
+
+.icones-sociais i {
+    margin: 0 10px; /* Espaçamento entre os ícones */
+    color: #fff; /* Cor dos ícones */
+    font-size: 60px; /* Tamanho dos ícones */
+    transition: color 0.3s; /* Transição suave para a cor */
+}
+
+.icones-sociais i:hover {
+    color: var(--roxo);
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: transform 0.3s;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 20px;
+  color: #ccc;
+}

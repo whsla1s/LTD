@@ -5,13 +5,11 @@
     <title>LTD Games</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header class="cabecalho">
-        <div class="logos-prin">
-            <img class="img-wyden" src="../image-site/logo_wyden_branco.png" alt="logo-wyden">
-            <img class="img-ltd" src="../image-site/LTD Logo Versão 2.png" alt="logo-wyden">
-        </div>   
+        <img class="img-logo" src="../image-site/logo_wyden_branco.png" alt="logo-wyden">
         <ul class="nav-conteiner">
             <li><a href="../index/index.html">Início</a></li>
             <li><a href="../mapa/index.html">Mapa</a></li>
@@ -23,22 +21,41 @@
     </header>
     
     <main>
-        <h2>Game</h2>
-        <p>Aqui você encontra jogos educativos e interativos.</p>
+        <section class="games-section">
+  <h2>Conheça Nossos Games Educativos</h2>
+
+  <div class="search-box">
+    <input type="text" placeholder="🔍 Pesquisar...">
+  </div>
+
+  <p class="games-description">
+    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. 
+    In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+  </p>
+
+  <div class="games-grid">
+    <div class="game-card">
+      <img src="../image-site/jogo1.jpg" alt="Jogo 1">
+      <p>Jogo 1</p>
+    </div>
+    <div class="game-card">
+      <img src="../image-site/jogo2.jpg" alt="Jogo 2">
+      <p>Jogo 2</p>
+    </div>
+    <div class="game-card">
+      <img src="../image-site/jogo3.jpg" alt="Jogo 3">
+      <p>Jogo 3</p>
+    </div>
+    <div class="game-card">
+      <img src="../image-site/jogo4.jpg" alt="Jogo 4">
+      <p>Jogo 4</p>
+    </div>
+  </div>
+</section>
+
     </main>
 
     <footer>
-        <div class="imagem-footer">
-            <div class="imagem-footer-conteudo">
-                <h1>RECEBA MAIS INFORMAÇÕES</h1>
-                <p>Preencha o formulário para receber mais informações sobre o projeto.</p>
-                <form action="index.php" method="post">
-                    <input type="email" name="email" placeholder="Seu endereço de e-mail">
-                    <button type="submit">Receber Informações</button>
-                </form>
-            </div>
-        </div>
-
         <div class="rodape-conteudo">
             <img class="logo-footer" src="../image-site/logo_wyden_branco.png" alt="Logo Wyden">
 
@@ -53,8 +70,9 @@
                      66025-610<br>
                 </div>
             </div>
+
             <div class="icones-sociais">
-                <a href="https://www.instagram.com/ltd.faciwyden?igsh=dXgzbzZqMGxhOTdh" target="_blank">
+                <a href="https://www.instagram.com/wydenoficial/" target="_blank">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
             </div>

@@ -5,13 +5,11 @@
     <title>LTD Educacional</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header class="cabecalho">
-        <div class="logos-prin">
-            <img class="img-wyden" src="../image-site/logo_wyden_branco.png" alt="logo-wyden">
-            <img class="img-ltd" src="../image-site/LTD Logo Versão 2.png" alt="logo-wyden">
-        </div>   
+        <img class="img-logo" src="../image-site/logo_wyden_branco.png" alt="logo-wyden">
         <ul class="nav-conteiner">
             <li><a href="../index/index.html">Início</a></li>
             <li><a href="../mapa/index.html">Mapa</a></li>
@@ -22,26 +20,29 @@
         </ul>
     </header>
     <main>
-        <h2>Educacional</h2>
-        <h3><a href="#" onclick="mostrarTela('matematica')">Matemática</a></h3>
-        <h3><a href="#" onclick="mostrarTela('portugues')">Português</a></h3>
-        <h3><a href="#" onclick="mostrarTela('historia')">História</a></h3>
-        <h3><a href="#" onclick="mostrarTela('ciencias')">Ciências</a></h3>
-        <h3><a href="#" onclick="mostrarTela('geografia')">Geografia</a></h3>
+<section class="sobre-section">
+  <div class="sobre-bloco">
+    <img src="../image-site/faci-wyden.jpg" alt="Imagem Wyden">
+    <div class="sobre-conteudo">
+      <h2>SOBRE O PROJETO</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.</p>
+      <a href="#" class="btn-sobre">CONTINUAR LENDO</a>
+    </div>
+  </div>
+
+  <div class="sobre-bloco invertido">
+    <div class="sobre-conteudo">
+      <h2>SOBRE O PROJETO</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.</p>
+      <a href="#" class="btn-sobre">CONTINUAR LENDO</a>
+    </div>
+    <img src="../image-site/faci-wyden.jpg" alt="Imagem Wyden">
+  </div>
+</section>
+
     </main>
 
     <footer>
-        <div class="imagem-footer">
-            <div class="imagem-footer-conteudo">
-                <h1>RECEBA MAIS INFORMAÇÕES</h1>
-                <p>Preencha o formulário para receber mais informações sobre o projeto.</p>
-                <form action="index.php" method="post">
-                    <input type="email" name="email" placeholder="Seu endereço de e-mail">
-                    <button type="submit">Receber Informações</button>
-                </form>
-            </div>
-        </div>
-
         <div class="rodape-conteudo">
             <img class="logo-footer" src="../image-site/logo_wyden_branco.png" alt="Logo Wyden">
 
@@ -56,8 +57,9 @@
                      66025-610<br>
                 </div>
             </div>
+
             <div class="icones-sociais">
-                <a href="https://www.instagram.com/ltd.faciwyden?igsh=dXgzbzZqMGxhOTdh" target="_blank">
+                <a href="https://www.instagram.com/wydenoficial/" target="_blank">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
             </div>

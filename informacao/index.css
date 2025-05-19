@@ -80,3 +80,92 @@
     margin-top: -20px;
     text-align: right;
 }
+
+/*SEÇÃO DA EQUIPE*/
+.equipe {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.equipe-titulo {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
+
+.equipe-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: #900060;
+    color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.equipe-imagem img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.equipe-info {
+    max-width: 500px;
+    text-align: left;
+}
+
+.equipe-info h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.funcao {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.equipe-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.equipe-card {
+    border-radius: 15px;
+    padding: 20px;
+    color: #fff;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.equipe-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.equipe-card h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.equipe-card .funcao {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.roxo {
+    background-color: #900060;
+}
+
+.amarelo {
+    background-color: #f7a800;
+    color: #000;
+}

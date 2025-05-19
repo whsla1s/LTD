@@ -2,11 +2,13 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>LTD Mapas</title>
+    <title>LTD Mapa</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="mapa.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script type="module" src="mapa.js"></script>
 </head>
 <body>
     <header class="cabecalho">
@@ -39,87 +41,20 @@
         
     </main>
 
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script>
-        const map = L.map('map').setView([-1.4558, -48.4902], 14); // Mapa em Belém
-        
-        L.tileLayer('https://tile.thunderforest.com/landscape/{z}/{x}/{y}.png?apikey=a314e26066124138b9e4c421c8c04e02', {
-            attribution: '&copy; OpenCycleMap',
-        }).addTo(map);
-
-        // Locais(Nome, Coordenadas, Zoom)
-        const locais = [
-            { nome: "Praça Batista Campos", lat: -1.459935, lng: -48.489726, zoom: 30 },
-            { nome: "Praça da Bandeira", lat: -1.454856, lng: -48.499655, zoom: 30 },
-            { nome: "Praça da República", lat: -1.45254, lng: -48.494081, zoom: 17 },
-            { nome: "Mangál das Garças", lat: -1.465089, lng: -48.5054, zoom: 17 },
-            { nome: "Complexo do Ver-O-Peso", lat: -1.447488, lng: -48.499168, zoom: 16 },
-            { nome: "Complexo Feliz Lusitânia", lat: -1.454580, lng: -48.504934, zoom: 18 },
-            { nome: "Orla Portal da Amazônia", lat: -1.469925, lng: -48.50215, zoom: 16 }
-        ];
-
-        const marcadores = {};
-
-        locais.forEach(local => {
-            const marker = L.marker([local.lat, local.lng], {
-                title: local.nome
-            }).addTo(map);
-
-            marker.bindTooltip(local.nome, { permanent: false, direction: 'top' });
-
-            marker.on('click', () => {
-                focusMap(local.lat, local.lng, local.zoom);
-            });
-
-            // Aguarda o DOM carregar o ícone do marcador
-            marker.on('add', () => {
-                const button = document.querySelector(`button[data-local="${local.nome}"]`);
-                if (button) {
-                    button.addEventListener('mouseenter', () => {
-                        const icon = marker._icon;
-                        if (icon) icon.classList.add('marcador-hover');
-                    });
-
-                    button.addEventListener('mouseleave', () => {
-                        const icon = marker._icon;
-                        if (icon) icon.classList.remove('marcador-hover');
-                    });
-                }
-            });
-
-            marcadores[local.nome] = marker;
-        });
-
-        function focusMap(lat, lng, zoom) {
-            map.setView([lat, lng], zoom);
-        }
-
-        // Adiciona interação de hover nos botões
-        document.querySelectorAll('.sidebar button').forEach(button => {
-            const nomeLocal = button.getAttribute('data-local');
-            const marker = marcadores[nomeLocal];
-
-            if (marker) {
-                button.addEventListener('mouseenter', () => {
-                    const icon = marker._icon;
-                    if (icon) icon.classList.add('marcador-hover');
-                });
-
-                button.addEventListener('mouseleave', () => {
-                    const icon = marker._icon;
-                    if (icon) icon.classList.remove('marcador-hover');
-                });
-            }
-        });
-
-        map.on('click', function(e) {
-            alert("Você clicou no mapa em: " + e.latlng.toString());
-        });
-    </script>
-
     <script src="../script.js"></script>
 
     <footer>
+        <div class="imagem-footer">
+            <div class="imagem-footer-conteudo">
+                <h1>RECEBA MAIS INFORMAÇÕES</h1>
+                <p>Preencha o formulário para receber mais informações sobre o projeto.</p>
+                <form action="index.php" method="post">
+                    <input type="email" name="email" placeholder="Seu endereço de e-mail">
+                    <button type="submit">Receber Informações</button>
+                </form>
+            </div>
+        </div>
+
         <div class="rodape-conteudo">
             <img class="logo-footer" src="../image-site/logo_wyden_branco.png" alt="Logo Wyden">
 

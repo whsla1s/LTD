@@ -116,7 +116,7 @@ footer {
     background-image: url('../image-site/coletores-de-lixo.jpg');
     background-size: cover;
     background-position: center;
-    margin: 0;
+    margin-bottom: 20px;
     padding-right: 5vw;
     padding-left: 40px;
     font-size: 10px;
@@ -235,7 +235,7 @@ footer {
 .icones-sociais {
     position: absolute;
     right: 20px;  
-    top: -1px;  
+    top: 20px;  
 }
 
 .icones-sociais i {

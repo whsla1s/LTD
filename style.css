@@ -38,6 +38,7 @@ body {
     align-items:center;
     gap:0; 
 }
+
 .img-wyden{
   height:90px;         /* ajuste o tamanho que usa */
   margin-right:8px;    /* espaço bem pequeno entre elas */
@@ -73,8 +74,11 @@ body {
     transition: var(--transition);
 }
 
-.nav-conteiner a:hover {
+.nav-conteiner a:hover, li:hover {
     color: var(--amarelo);
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: var(--transition);
 }
 
 .nav-conteiner .selecionado {

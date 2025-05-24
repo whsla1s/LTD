@@ -2,25 +2,27 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>LTD Mapas</title>
+    <title>LTD Mapa</title>
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="mapa.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script type="module" src="mapa.js"></script>
 </head>
 <body>
     <header class="cabecalho">
         <div class="logos-prin">
             <img class="img-wyden" src="../image-site/logo_wyden_branco.png" alt="logo-wyden">
-            <img class="img-ltd" src="../image-site/LTD Logo Versão 2.png" alt="logo-wyden">
-        </div>   
+        </div>
         <ul class="nav-conteiner">
             <li><a href="../index/index.html">Início</a></li>
             <li><a href="../mapa/index.html" class="selecionado">Mapa</a></li>
             <li><a href="../educacional/index.html">Educacional</a></li>
             <li><a href="../games/index.html">Games</a></li>
-            <li><a href="../informacao/index.html">Informações</a></li>
+            <li><a href="../sobre/index.html">Sobre</a></li>
             <li><a href="../eventos/index.html">Eventos</a></li>
+            <li><a href="../faq/index.html">FAQ</a></li>
         </ul>
     </header>
 
@@ -28,14 +30,31 @@
         <div id="map"></div>
         <aside class="sidebar">
             <h3>Locais</h3>
-            <button onclick="focusMap(-1.459935, -48.489726, 30)">Praça Batista Campos</button>
-            <button onclick="focusMap(-1.45254, -48.494081, 17)">Praça da República</button>
-            <button onclick="focusMap(-1.465089, -48.5054, 17)">Mangál das Garças</button>
+            <button data-local="Praça Batista Campos" onclick="focusMap(-1.459935, -48.489726, 30)">Praça Batista Campos</button>
+            <button data-local="Praça da Bandeira" onclick="focusMap(-1.454856, -48.499655, 30)">Praça da Bandeira</button>
+            <button data-local="Praça da República" onclick="focusMap(-1.45254, -48.494081, 17)">Praça da República</button>
+            <button data-local="Mangál das Garças" onclick="focusMap(-1.465089, -48.5054, 17)">Mangál das Garças</button>
+            <button data-local="Complexo do Ver-O-Peso" onclick="focusMap(-1.447488, -48.499168, 16)">Complexo do Ver-O-Peso</button>
+            <button data-local="Complexo Feliz Lusitânia" onclick="focusMap(-1.454580, -48.504934, 18)">Complexo Feliz Lusitânia</button>
+            <button data-local="Orla Portal da Amazônia" onclick="focusMap(-1.469925, -48.50215, 16)">Orla Portal da Amazônia</button>
         </aside>
         
     </main>
 
+    <script src="../script.js"></script>
+
     <footer>
+        <div class="imagem-footer">
+            <div class="imagem-footer-conteudo">
+                <h1>RECEBA MAIS INFORMAÇÕES</h1>
+                <p>Preencha o formulário para receber mais informações sobre o projeto.</p>
+                <form action="index.php" method="post">
+                    <input type="email" name="email" placeholder="Seu endereço de e-mail">
+                    <button type="submit">Receber Informações</button>
+                </form>
+            </div>
+        </div>
+
         <div class="rodape-conteudo">
             <img class="logo-footer" src="../image-site/logo_wyden_branco.png" alt="Logo Wyden">
 
@@ -43,47 +62,13 @@
 
             <div class="colunas">
                 <div class="coluna">
-                    <strong>Place Holder Text</strong><br>
-                    place@holder.br<br>
-                    (00) 0000-0000<br><br>
-                    Rua Place Holder, 10 - Zona Place Holder<br>
-                    Place - HO<br>
-                    00000-000<br>
-                    Razão Social: Place Holder<br>
-                    CNPJ 00.000.000/0000-00
-                </div>
-                <div class="coluna">
-                    <strong>Place Holder Text</strong><br>
-                    place@holder.br<br>
-                    (00) 0000-0000<br><br>
-                    Rua Place Holder, 10 - Zona Place Holder<br>
-                    Place - HO<br>
-                    00000-000<br>
-                    Razão Social: Place Holder<br>
-                    CNPJ 00.000.000/0000-00
-                </div>
-                <div class="coluna">
-                    <strong>Place Holder Text</strong><br>
-                    place@holder.br<br>
-                    (00) 0000-0000<br><br>
-                    Rua Place Holder, 10 - Zona Place Holder<br>
-                    Place - HO<br>
-                    00000-000<br>
-                    Razão Social: Place Holder<br>
-                    CNPJ 00.000.000/0000-00
-                </div>
-                <div class="coluna">
-                    <strong>Place Holder Text</strong><br>
-                    place@holder.br<br>
-                    (00) 0000-0000<br><br>
-                    Rua Place Holder, 10 - Zona Place Holder<br>
-                    Place - HO<br>
-                    00000-000<br>
-                    Razão Social: Place Holder<br>
-                    CNPJ 00.000.000/0000-00
+                    <strong>Informações</strong><br>
+                    naaf.faci@faculdadeideal.edu.br<br>
+                    (91) 3323-6000<br><br>
+                    Tv. Tupinambás, nº 461, Bairro Batista Campos Belém - PA.<br>
+                     66025-610<br>
                 </div>
             </div>
-
             <div class="icones-sociais">
                 <a href="https://www.instagram.com/ltd.faciwyden?igsh=dXgzbzZqMGxhOTdh" target="_blank">
                     <i class="fa-brands fa-instagram"></i>
@@ -95,28 +80,5 @@
             </div>
         </div>
     </footer>
-
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script>
-        const map = L.map('map').setView([-1.4558, -48.4902], 20); // Mapa em Belém
-        
-        L.tileLayer('https://tile.thunderforest.com/landscape/{z}/{x}/{y}.png?apikey=a314e26066124138b9e4c421c8c04e02', {
-            attribution: '&copy; OpenCycleMap',
-        }).addTo(map);
-
-        const marker = L.marker([-1.4558, -48.4902]).addTo(map);
-        marker.bindPopup("<b>Olá!</b><br>Estou em Belém.").openPopup();
-
-        function focusMap(lat, lng, zoom) {
-            map.setView([lat, lng], zoom);
-        }
-
-        map.on('click', function(e) {
-            alert("Você clicou no mapa em: " + e.latlng.toString());
-        });
-    </script>
-
-    <script src="../script.js"></script>
-    
 </body>
 </html>

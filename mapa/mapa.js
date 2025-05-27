@@ -1,4 +1,5 @@
 const map = L.map('map').setView([-1.4558, -48.4902], 14); // Mapa em Belém
+var coletaSeletiva = 0;
 
 L.tileLayer('https://tile.thunderforest.com/landscape/{z}/{x}/{y}.png?apikey=a314e26066124138b9e4c421c8c04e02', {
     attribution: '&copy; OpenCycleMap',

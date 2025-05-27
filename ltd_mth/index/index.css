@@ -1,0 +1,80 @@
+@import url('../config.css');
+
+body, main {
+    margin: 0; /* Remove margens padrão do body */
+    padding: 0; /* Remove preenchimento padrão do body */
+}
+
+.container {
+    display: flex; /* Ativa o Flexbox para organizar os elementos em linha */
+    align-items: flex-start; /* Alinha os itens ao topo do container */
+    justify-content: space-between; /* Cria espaço máximo entre texto e imagem */
+    max-width: 900px; /* Largura máxima do container */
+    margin: 50px auto; /* Centraliza o container horizontalmente com margem superior/inferior de 50px */
+    gap: 30px; /* Espaçamento entre o texto e a imagem */
+}
+
+.texto {
+    flex: 1.0; /* Faz o texto ocupar o espaço restante disponível */
+    font-family: var(--font-style); /* Define a fonte usada no texto */
+    font-size: 16px; /* Tamanho da fonte */
+    line-height: 1.6; /* Espaçamento entre linhas para melhor legibilidade */
+}
+
+.imagem {
+    flex-shrink: 0; /* Impede que a imagem diminua de tamanho em telas menores */
+}
+
+.logo-prin {
+    display:flex;
+    align-items:center;
+    gap:0; 
+}
+
+.img-ltd{
+    height:100px;         /* ajuste o tamanho que usa */
+    margin-right:8px;
+}
+
+.imagem-inicio{
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* Estilização direta da imagem */
+.imagem #imagem {
+    width: 400px;          /* Largura fixa da imagem */
+    border-radius: 10px;   /* Cantos arredondados na imagem */
+    margin-left: auto;     /* Alinha a imagem à direita */
+    margin-right: -70px;   /* Move a imagem mais para a direita */
+}
+
+.titulo-projeto {
+    text-align: center;
+    color: var(--roxo);
+    font-size: 3em;
+    margin-top: 50px;
+    font-family: var(--font-style);
+}
+
+.imagem2 {
+    text-align: center;/* Centraliza a imagem */
+    margin-top: 40px;/* Espaço entre o conteúdo acima */
+}
+
+.imagem2 {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.retangulo {
+  width: 100%; /* Largura do retângulo */
+  height: 200px; /* Altura do retângulo */
+  background-image: url('');
+  background-size: cover;      /* Ajusta a imagem para cobrir todo o retângulo */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat;/* Impede repetição */
+  border: 2px solid #ccc;      /* Opcional: borda para visualização */
+}

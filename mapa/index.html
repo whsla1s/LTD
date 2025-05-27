@@ -30,15 +30,43 @@
         <div id="map"></div>
         <aside class="sidebar">
             <h3>Locais</h3>
-            <button data-local="Praça Batista Campos" onclick="focusMap(-1.459935, -48.489726, 30)">Praça Batista Campos</button>
-            <button data-local="Praça da Bandeira" onclick="focusMap(-1.454856, -48.499655, 30)">Praça da Bandeira</button>
-            <button data-local="Praça da República" onclick="focusMap(-1.45254, -48.494081, 17)">Praça da República</button>
-            <button data-local="Mangál das Garças" onclick="focusMap(-1.465089, -48.5054, 17)">Mangál das Garças</button>
-            <button data-local="Complexo do Ver-O-Peso" onclick="focusMap(-1.447488, -48.499168, 16)">Complexo do Ver-O-Peso</button>
-            <button data-local="Complexo Feliz Lusitânia" onclick="focusMap(-1.454580, -48.504934, 18)">Complexo Feliz Lusitânia</button>
-            <button data-local="Orla Portal da Amazônia" onclick="focusMap(-1.469925, -48.50215, 16)">Orla Portal da Amazônia</button>
+            <button data-local="Praça Batista Campos"
+                onclick="focusMap(-1.459935, -48.489726, 30); mostrarPopup()">Praça Batista Campos</button>
+            <button data-local="Praça da Bandeira" onclick="focusMap(-1.454856, -48.499655, 30); mostrarPopup()">Praça da Bandeira</button>
+            <button data-local="Praça da República" onclick="focusMap(-1.45254, -48.494081, 17); mostrarPopup()">Praça da República</button>
+            <button data-local="Mangál das Garças" onclick="focusMap(-1.465089, -48.5054, 17); mostrarPopup()">Mangál das Garças</button>
+            <button data-local="Complexo do Ver-O-Peso" onclick="focusMap(-1.447488, -48.499168, 16); mostrarPopup()">Complexo doVer-O-Peso</button>
+            <button data-local="Complexo Feliz Lusitânia" onclick="focusMap(-1.454580, -48.504934, 18); mostrarPopup()">Complexo Feliz Lusitânia</button>
+            <button data-local="Orla Portal da Amazônia" onclick="focusMap(-1.469925, -48.50215, 16); mostrarPopup()">Orla Portal da Amazônia</button>
         </aside>
-        
+
+        <div id="popup-modal" class="modal">
+            <div class="modal-content">
+                <div class="popup-body">
+                    <div class="aviso-imagem-conteudo">
+                        <img src="../image-site/aviso.png" alt="aviso">
+                    </div>
+                    <div class="aviso-texto">
+                        <div class="texto1">
+                            <p>
+                                OPA<span style="color: var(--amarelo);">!</span><br>
+                                Parece que o<br>
+                                <span style="color: var(--roxo);">local</span> escolhido<br>
+                                <span style="color: var(--amarelo);">não</span> tem coleta<br>
+                                <span style="color: var(--roxo);">SELETIVA</span>
+                            </p>
+                        </div>
+                        <div class="texto2">
+                            <p>
+                                verifique nossas <span style="color: var(--roxo);">propostas</span> abaixo<br>
+                                CLICANDO NO <span style="color: var(--amarelo);">BOTÃO</span>
+                            </p>
+                            <button class="botao-modal">BORA LÁ?</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <script src="../script.js"></script>

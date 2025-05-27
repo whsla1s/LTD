@@ -36,10 +36,12 @@ body, main {
     margin-right:8px;
 }
 
+/* imagem do inicio */
 .imagem-inicio{
     width: 100%;
     display: block;
     height: auto;
+    margin-top: -140px;
 }
 
 /* Estilização direta da imagem */

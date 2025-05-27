@@ -84,3 +84,12 @@ document.querySelectorAll('.sidebar button').forEach(button => {
 map.on('click', function(e) {
     alert("Você clicou no mapa em: " + e.latlng.toString());
 });
+
+function mostrarPopup() {
+    if (coletaSeletiva <= 0) {
+        document.getElementById("popup-modal").style.display = "block";
+    }
+}
+function fecharPopup() {
+    document.getElementById("popup-modal").style.display = "none";
+}

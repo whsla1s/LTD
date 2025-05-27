@@ -11,6 +11,17 @@
     box-shadow: var(--box-shadow);  
 }
 
+.cabecalho {
+    background-color: var(--roxo);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    z-index: 1;
+}
+
+
 #map-title {
     text-align: center;
 }

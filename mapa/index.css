@@ -64,3 +64,107 @@
     transform: scale(1.1);
     transition: var(--transition);
 }
+
+/* Fundo do popup */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: transparent;
+    margin: auto;
+    border-radius: 16px;
+    width: 1400px;
+    height: 675px;
+    max-width: 98vw;
+    padding: 56px 64px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    color: black;
+}
+
+.popup-body {
+    display: flex;
+    flex-direction: row;
+    gap: 64px; /* Mais espaço entre imagem e texto */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.aviso-imagem-conteudo img {
+    width: 320px;    /* Imagem maior e proporcional */
+    height: auto;
+    display: block;
+    padding-bottom: 250px;
+}
+
+.aviso-texto {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    max-width: 700px;
+}
+
+.texto1 p {
+    font-size: 64px;         /* Título maior */
+    font-weight: 900;
+    margin: 0 0 24px 0;
+    line-height: 1.05;
+    letter-spacing: -2px;
+}
+
+.texto2 p {
+    font-size: 32px;         /* Subtítulo maior */
+    margin: 0 0 24px 0;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.botao-modal {
+    margin-top: 32px;
+    padding: 22px 64px;
+    background-color: var(--roxo);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: inline-block;
+    transition: background 0.2s, color 0.2s;
+}
+
+.botao-modal::after {
+    content: '>';
+    color: var(--amarelo);
+    margin-left: 18px;
+    font-size: 36px;
+    transition: margin-left 0.3s;
+}
+
+.botao-modal:hover {
+    background-color: var(--amarelo);
+    color: var(--roxo);
+}
+
+.botao-modal:hover::after {
+    margin-left: 28px;
+}

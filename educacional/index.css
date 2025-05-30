@@ -1,0 +1,106 @@
+/* Container principal de cada bloco (imagem + texto) */
+.bloco {
+  display: flex; /* Alinha imagem e texto lado a lado */
+  flex-wrap: wrap; /* Permite que o conteúdo quebre para próxima linha em telas pequenas */
+  align-items: center; /* Centraliza verticalmente os itens */
+  justify-content: center; /* Centraliza horizontalmente em telas menores */
+  margin: 40px 0; /* Espaçamento vertical entre blocos */
+  gap: 20px; /* Espaçamento entre imagem e texto */
+}
+
+.container {
+    align-items: flex-start; /* Alinha os itens ao topo do container */
+    justify-content: space-between; /* Cria espaço máximo entre texto e imagem */
+    gap: 30px; /* Espaçamento entre o texto e a imagem */
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.imagem-inicio{
+    width: 100%;
+    display: block;
+    height: auto;
+    margin-top: -150px;
+}
+
+.titulo_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; 
+    /* text-shadow: 2px 2px 4px rgba(0,0,0,0.6); */
+}
+
+.titulo_img h1 {
+    margin: 0;
+    font-size: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Saira', sans-serif;
+    font-weight: 600;
+}
+
+/* Direção padrão: imagem à esquerda, texto à direita */
+.bloco-normal {
+  flex-direction: row;
+}
+
+/* Direção invertida: imagem à direita, texto à esquerda */
+.bloco-reverso {
+  flex-direction: row-reverse;
+}
+
+/* Estilização da imagem */
+.imagem {
+  width: 100%; /* Ocupa 100% da largura disponível no mobile */
+  max-width: 400px; /* Limita o tamanho da imagem em telas grandes */
+  border-radius: 15px; /* Cantos arredondados */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  object-fit: cover; /* Garante que a imagem cubra a área corretamente */
+}
+
+/* Área de texto ao lado da imagem */
+.texto {
+  flex: 1; /* Ocupa o espaço restante ao lado da imagem */
+  padding: 20px; /* Espaçamento interno */
+  max-width: 500px; /* Limita a largura do texto em telas grandes */
+}
+
+/* Título do bloco */
+.titulo {
+  font-family: 'Poppins', sans-serif; /* Fonte moderna */
+  font-weight: 700; /* Negrito */
+  font-size: 24px; /* Tamanho do título */
+  margin-bottom: 10px; /* Espaço abaixo do título */
+}
+
+/* Parágrafo com descrição do projeto */
+.descricao {
+  font-family: 'Poppins', sans-serif; /* Mesma fonte para consistência */
+  font-size: 16px; /* Tamanho legível */
+  line-height: 1.6; /* Altura de linha confortável para leitura */
+  margin-bottom: 20px; /* Espaço abaixo do parágrafo */
+  text-align: justify; /* Alinha texto nas duas margens */
+}
+
+/* Botão de ação */
+.botao {
+  background-color: #FFA726; /* Laranja (cor da Wyden) */
+  color: white; /* Texto branco */
+  padding: 12px 24px; /* Espaçamento interno (altura x largura) */
+  border: none; /* Remove borda padrão */
+  border-radius: 8px; /* Cantos arredondados */
+}
+
+.botao:hover {
+  background-color: #FF9800; /* Cor mais escura ao passar o mouse */
+  transform: scale(1.1); /* Aumenta levemente o tamanho do botão */
+  transition: background-color 0.3s, transform 0.3s; /* Transição suave */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}

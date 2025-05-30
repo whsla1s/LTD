@@ -1,0 +1,41 @@
+.container {
+    align-items: flex-start; /* Alinha os itens ao topo do container */
+    justify-content: space-between; /* Cria espaço máximo entre texto e imagem */
+    gap: 30px; /* Espaçamento entre o texto e a imagem */
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.imagem-inicio{
+    width: 100%;
+    display: block;
+    height: auto;
+    margin-top: -150px;
+}
+
+.titulo_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; 
+    /* text-shadow: 2px 2px 4px rgba(0,0,0,0.6); */
+}
+
+.titulo_img h1 {
+    margin: 0;
+    font-size: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Saira', sans-serif;
+    font-weight: 600;
+}
+
+.titulo_img h1 span {
+    display: block;
+}

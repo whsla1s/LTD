@@ -1,0 +1,191 @@
+@import url('config.css');
+
+#map {
+    height: 500px;
+    width: 75%;
+    margin-top: 20px;
+    margin-right: 0;
+    border-radius: 8px;
+    border: 2px solid black;
+    background-color: var(--branco-escuro);
+    box-shadow: var(--box-shadow);  
+}
+
+.cabecalho {
+    background-color: var(--roxo);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    z-index: 1;
+}
+
+#map-title {
+    text-align: center;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.leaflet-marker-icon.marcador-hover {
+    filter: drop-shadow(0 0 5px var(--amarelo));
+}
+
+.sidebar {
+    width: 25%;
+    background-color: var(--branco-escuro);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    font-family: var(--font-style);
+}
+
+.sidebar h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--roxo);
+    font-family: var(--font-style);
+}
+
+.sidebar button {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(20, 20, 20, 0.20);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--transition);
+    font-family: var(--font-style);
+    text-align: left;
+    text-decoration: none;
+}
+
+.sidebar button:hover {
+    background-color: rgba(20, 20, 20, 0.40);
+    transform: scale(1.1);
+    transition: var(--transition);
+}
+
+/* Fundo do popup */
+.modal {
+    background-color: transparent;
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.3); /* Fundo mais escuro e ainda transparente */
+    padding: 0;
+}
+
+.modal-content {
+    margin: auto;
+    border-radius: 16px;
+
+    /* Ajuste proporcional baseado em 1920x1080 (16:9) */
+    width: 90vw;
+    aspect-ratio: 16 / 9;
+    max-width: 1400px;
+    max-height: 90vh;
+    top: 20px;
+    padding: 56px 64px 56px 64px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+}
+
+
+.popup-body {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 64px; /* Mais espaço entre imagem e texto */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.aviso-imagem-conteudo img {
+    width: 280px;    /* Imagem maior e proporcional */
+    height: auto;
+    display: block;
+    position: relative;
+    top: 80px;
+    padding-bottom: 250px;
+}
+
+.aviso-texto {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    max-width: 700px;
+}
+
+.texto1 p {
+    font-size: 48px;         /* Título maior */
+    font-weight: 900;
+    margin: 0 0 12px 0;
+    line-height: 1.05;
+    letter-spacing: -2px;
+}
+
+.texto2 p {
+    font-size: 32px;         /* Subtítulo maior */
+    margin: 0 0 12px 0;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.botao-modal {
+    margin-top: 32px;
+    padding: 22px 64px;
+    background-color: var(--roxo);
+    color: white;
+    bottom: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: inline-block;
+    transition: background 0.2s, color 0.2s;
+}
+
+.botao-modal::after {
+    content: '>';
+    color: var(--amarelo);
+    margin-left: 18px;
+    font-size: 36px;
+    transition: margin-left 0.3s;
+}
+
+.botao-modal:hover {
+    background-color: var(--amarelo);
+    color: var(--roxo);
+}
+
+.botao-modal:hover::after {
+    margin-left: 28px;
+}

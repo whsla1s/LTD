@@ -1,0 +1,181 @@
+@import url('../config.css');
+
+body, main {
+    margin: 0; /* Remove margens padrão do body */
+    padding: 0; /* Remove preenchimento padrão do body */
+}
+
+.container {
+    display: flex; /* Ativa o Flexbox para organizar os elementos em linha */
+    align-items: flex-start; /* Alinha os itens ao topo do container */
+    justify-content: space-between; /* Cria espaço máximo entre texto e imagem */
+    max-width: 900px; /* Largura máxima do container */
+    margin: 50px auto; /* Centraliza o container horizontalmente com margem superior/inferior de 50px */
+    gap: 30px; /* Espaçamento entre o texto e a imagem */
+}
+
+.texto {
+    flex: 1.0; /* Faz o texto ocupar o espaço restante disponível */
+    font-family: var(--font-style); /* Define a fonte usada no texto */
+    font-size: 16px; /* Tamanho da fonte */
+    line-height: 1.6; /* Espaçamento entre linhas para melhor legibilidade */
+}
+
+.imagem {
+    flex-shrink: 0; /* Impede que a imagem diminua de tamanho em telas menores */
+}
+
+.logo-prin {
+    display:flex;
+    align-items:center;
+    gap:0; 
+}
+
+.img-ltd{
+    height:100px;         /* ajuste o tamanho que usa */
+    margin-right:8px;
+}
+
+/* imagem do inicio */
+.imagem-inicio{
+    width: 100%;
+    display: block;
+    height: auto;
+    margin-top: -140px;
+}
+
+/* Estilização direta da imagem */
+.imagem #imagem {
+    width: 400px;          /* Largura fixa da imagem */
+    border-radius: 10px;   /* Cantos arredondados na imagem */
+    margin-left: auto;     /* Alinha a imagem à direita */
+    margin-right: -70px;   /* Move a imagem mais para a direita */
+}
+
+.titulo-projeto {
+    text-align: center;
+    color: var(--roxo);
+    font-size: 3em;
+    margin-top: 50px;
+    font-family: var(--font-style);
+}
+
+.imagem2 {
+    text-align: center;/* Centraliza a imagem */
+    margin-top: 40px;/* Espaço entre o conteúdo acima */
+}
+
+.imagem2 {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* ---- */
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  background-color: #fff;
+  color: #000;
+  overflow-x: auto;
+}
+
+.card-container a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.text-section {
+  flex-shrink: 0;
+  min-width: 150px;
+}
+
+.text-section h2 {
+  color: #880E4F;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.text-section a {
+  color: #880E4F;
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.text-section a::after {
+  content: "→";
+  margin-left: 0.5rem;
+}
+
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  margin-left: 10rem; 
+}
+
+.card-container {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  padding: 0 1rem;
+}
+
+.card {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 200px;
+  height: 320px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  border-radius: 10px;
+}
+
+.card span {
+  position: relative;
+  z-index: 1;
+}
+
+.retangulo {
+  width: 100%; /* Largura do retângulo */
+  height: 200px; /* Altura do retângulo */
+  background-image: url('');
+  background-size: cover;      /* Ajusta a imagem para cobrir todo o retângulo */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat;/* Impede repetição */
+  border: 2px solid #ccc;      /* Opcional: borda para visualização */
+}

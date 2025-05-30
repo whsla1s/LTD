@@ -97,3 +97,10 @@
   border: none; /* Remove borda padrão */
   border-radius: 8px; /* Cantos arredondados */
 }
+
+.botao:hover {
+  background-color: #FF9800; /* Cor mais escura ao passar o mouse */
+  transform: scale(1.1); /* Aumenta levemente o tamanho do botão */
+  transition: background-color 0.3s, transform 0.3s; /* Transição suave */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}

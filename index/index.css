@@ -71,6 +71,105 @@ body, main {
     display: block;
 }
 
+
+/* ---- */
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  background-color: #fff;
+  color: #000;
+  overflow-x: auto;
+}
+
+.card-container a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.text-section {
+  flex-shrink: 0;
+  min-width: 150px;
+}
+
+.text-section h2 {
+  color: #880E4F;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.text-section a {
+  color: #880E4F;
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.text-section a::after {
+  content: "→";
+  margin-left: 0.5rem;
+}
+
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  margin-left: 10rem; 
+}
+
+.card-container {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  padding: 0 1rem;
+}
+
+.card {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 200px;
+  height: 320px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  border-radius: 10px;
+}
+
+.card span {
+  position: relative;
+  z-index: 1;
+}
+
 .retangulo {
   width: 100%; /* Largura do retângulo */
   height: 200px; /* Altura do retângulo */

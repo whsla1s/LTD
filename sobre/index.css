@@ -172,6 +172,51 @@
 
 /* ------------- */
 
+ .faq {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 100px auto; 
+    font-family: 'Saira', sans-serif;
+}
+
+.faq h1 {
+    font-weight: 130;
+    text-align: center;
+}
+
+.faq details summary {
+    list-style: none;
+    padding: 2%;
+    border-bottom: 1.5px solid black;
+    font-weight: 130;
+    text-align: left;
+    cursor: pointer;
+}
+
+.faq details summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq details summary::after {
+    content: "\f067"; /* icone "+"*/
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    float: right;
+}
+
+.faq details[open] summary::after {
+    content: "\f068"; /* icone "-"*/
+}
+
+.faq details p {
+    background-color: white;
+    color: black;
+    text-align: left;
+    font-weight: 200;
+    padding: 10px;
+    margin: 0;
+}        
+
 /*SEÇÃO DA EQUIPE*/
 .equipe {
     padding: 40px 20px;

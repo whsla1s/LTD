@@ -74,7 +74,7 @@ body {
     transition: var(--transition);
 }
 
-.nav-conteiner a:hover, li:hover {
+.nav-conteiner a:hover, .nav-conteiner li:hover {
     color: var(--amarelo);
     cursor: pointer;
     transform: scale(1.1);
@@ -201,9 +201,25 @@ footer {
 }
 
 .imagem-footer-conteudo {
-    width: 100%;
-    height: auto;
-    display: block;
+  padding: 20px 30px;
+  border-radius: 10px;
+  text-align: left;
+  max-width: 400px;
+}
+
+.botao-footer {
+  display: inline-block;
+  background-color: #FFA736;
+  color: white;
+  font-size: 15px;
+  padding: 20px 40px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.botao-footer:hover {
+  background-color: #e0912d;
 }
 
 .rodape-conteudo {

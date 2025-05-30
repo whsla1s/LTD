@@ -91,6 +91,10 @@ function mostrarPopup() {
         document.getElementById("popup-modal").style.display = "block";
     }
 }
+window.mostrarPopup = mostrarPopup;
+
 function fecharPopup() {
     document.getElementById("popup-modal").style.display = "none";
 }
+
+window.fecharPopup = fecharPopup;

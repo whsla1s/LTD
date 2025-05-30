@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira:wght@400;600;700&display=swap">
+
     <script type="module" src="mapa.js"></script>
 </head>
 <body>
@@ -25,13 +27,12 @@
             <li><a href="../faq/index.html">FAQ</a></li>
         </ul>
     </header>
-
+       
     <main class="main-container">
         <div id="map"></div>
         <aside class="sidebar">
             <h3>Locais</h3>
-            <button data-local="Praça Batista Campos"
-                onclick="focusMap(-1.459935, -48.489726, 30); mostrarPopup()">Praça Batista Campos</button>
+            <button data-local="Praça Batista Campos" onclick="focusMap(-1.459935, -48.489726, 30); mostrarPopup()">Praça Batista Campos</button>
             <button data-local="Praça da Bandeira" onclick="focusMap(-1.454856, -48.499655, 30); mostrarPopup()">Praça da Bandeira</button>
             <button data-local="Praça da República" onclick="focusMap(-1.45254, -48.494081, 17); mostrarPopup()">Praça da República</button>
             <button data-local="Mangál das Garças" onclick="focusMap(-1.465089, -48.5054, 17); mostrarPopup()">Mangál das Garças</button>

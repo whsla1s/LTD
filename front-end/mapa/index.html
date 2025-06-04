@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>LTD Mapa</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira:wght@400;600;700&display=swap">
+
+    <script type="module" src="mapa.js"></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logos-prin">
+            <img class="img-wyden" src="../image-site/logo_wyden_branco.png" alt="logo-wyden">
+        </div>
+        <ul class="nav-conteiner">
+            <li><a href="../index/index.html">Início</a></li>
+            <li><a href="../mapa/index.html" class="selecionado">Mapa</a></li>
+            <li><a href="../educacional/index.html">Educacional</a></li>
+            <li><a href="../games/index.html">Games</a></li>
+            <li><a href="../sobre/index.html">Sobre</a></li>
+            <li><a href="../eventos/index.html">Eventos</a></li>
+            <li><a href="../faq/index.html">FAQ</a></li>
+        </ul>
+    </header>
+       
+    <main class="main-container">
+        <div id="map"></div>
+        <aside class="sidebar">
+            <h3>Locais</h3>
+            <button data-local="Praça Batista Campos" onclick="focusMap(-1.459935, -48.489726, 30); mostrarPopup()">Praça Batista Campos</button>
+            <button data-local="Praça da Bandeira" onclick="focusMap(-1.454856, -48.499655, 30); mostrarPopup()">Praça da Bandeira</button>
+            <button data-local="Praça da República" onclick="focusMap(-1.45254, -48.494081, 17); mostrarPopup()">Praça da República</button>
+            <button data-local="Mangál das Garças" onclick="focusMap(-1.465089, -48.5054, 17); mostrarPopup()">Mangál das Garças</button>
+            <button data-local="Complexo do Ver-O-Peso" onclick="focusMap(-1.447488, -48.499168, 16); mostrarPopup()">Complexo doVer-O-Peso</button>
+            <button data-local="Complexo Feliz Lusitânia" onclick="focusMap(-1.454580, -48.504934, 18); mostrarPopup()">Complexo Feliz Lusitânia</button>
+            <button data-local="Orla Portal da Amazônia" onclick="focusMap(-1.469925, -48.50215, 16); mostrarPopup()">Orla Portal da Amazônia</button>
+        </aside>
+
+        <div id="popup-modal" class="modal">
+            <div class="modal-content">
+                <div class="popup-body">
+                    <div class="aviso-imagem-conteudo">
+                        <img src="../image-site/aviso.png" alt="aviso">
+                    </div>
+                    <div class="aviso-texto">
+                        <div class="texto1">
+                            <p>
+                                OPA<span style="color: var(--amarelo);">!</span><br>
+                                Parece que o<br>
+                                <span style="color: var(--roxo);">local</span> escolhido<br>
+                                <span style="color: var(--amarelo);">não</span> tem coleta<br>
+                                <span style="color: var(--roxo);">SELETIVA</span>
+                            </p>
+                        </div>
+                        <div class="texto2">
+                            <p>
+                                verifique nossas <span style="color: var(--roxo);">propostas</span> abaixo<br>
+                                CLICANDO NO <span style="color: var(--amarelo);">BOTÃO</span>
+                            </p>
+                            <button class="botao-modal">BORA LÁ?</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../script.js"></script>
+
+    <footer>
+        <div class="imagem-footer">
+            <div class="imagem-footer-conteudo">
+                <h1>RECEBA MAIS INFORMAÇÕES</h1>
+                <p>Preencha o campo abaixo para receber mais informações sobre o projeto.</p>
+                <a href="../cadastro/index.html" class="botao-footer">Cadastre-se Aqui</a>
+            </div>
+        </div>
+
+        <div class="rodape-conteudo">
+            <img class="logo-footer" src="../image-site/logo_wyden_branco.png" alt="Logo Wyden">
+
+            <hr class="divisor">
+
+            <div class="colunas">
+                <div class="coluna">
+                    <strong>Informações</strong><br>
+                    naaf.faci@faculdadeideal.edu.br<br>
+                    (91) 3323-6000<br><br>
+                    Tv. Tupinambás, nº 461, Bairro Batista Campos Belém - PA.<br>
+                     66025-610<br>
+                </div>
+            </div>
+            <div class="icones-sociais">
+                <a href="https://www.instagram.com/ltd.faciwyden?igsh=dXgzbzZqMGxhOTdh" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2025 Wyden. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

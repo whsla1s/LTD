@@ -1,0 +1,331 @@
+/*PRIMEIRA PARTE*/
+.info-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 50px auto;
+    max-width: 900px;
+}
+
+
+.container {
+    align-items: flex-start; /* Alinha os itens ao topo do container */
+    justify-content: space-between; /* Cria espaço máximo entre texto e imagem */
+    gap: 30px; /* Espaçamento entre o texto e a imagem */
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.imagem-inicio{
+    width: 100%;
+    display: block;
+    height: auto;
+    margin-top: -150px;
+}
+
+.titulo_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; 
+    /* text-shadow: 2px 2px 4px rgba(0,0,0,0.6); */
+}
+
+.titulo_img h1 {
+    margin: 0;
+    font-size: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Saira', sans-serif;
+    font-weight: 600;
+}
+
+/* conteudo */
+.info-texto h1 {
+    margin-bottom: 10px; /* ou o valor que preferir */
+}
+
+.info-texto { 
+    flex: 1;               /* Faz o texto ocupar o espaço restante disponível */
+    font-size: 16px;       /* Tamanho da fonte */
+    line-height: 1.5;      /* Espaçamento entre linhas para melhor legibilidade */ 
+    margin-left: -80px;    /* Move só texto*/
+    margin-top: -30px;
+    max-width: 640px;
+}
+
+.info-container img { 
+    width: 300px;          /* Largura fixa da imagem */
+    border-radius: 10px;   /* Cantos arredondados na imagem */
+    margin-left: auto;     /* Alinha a imagem à direita */
+    margin-right: -60px;   /* Move a imagem mais para a direita */
+    margin-top: -120px;      /* Move a imagem para cima*/
+}
+
+
+.imagens-info {
+    display: flex;
+    flex-direction: column;  /* Faz os itens ficarem em coluna */
+    align-items: center;     /* Centraliza horizontalmente */
+    margin-top: 20px;
+    flex-direction: column;   
+    gap: 60px;                
+}
+
+.info-img,
+.coleta-divertida-img {
+    flex-direction: column; 
+    width: 400px;
+    border-radius: 10px;
+    margin: 10px 0; 
+}
+
+/*SEGUNDA PARTE*/
+.info-texto2 {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto 40px auto;
+    margin-left: 65px;
+    padding: 0;
+    max-width: 1100px;
+    margin-top: -20px;
+}
+
+.img-coluna-2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: right;
+    gap: 0px;
+    margin: auto;
+    flex-wrap: wrap;
+    max-width: 1100px;
+}
+
+.cop30 {
+    width: 450px;
+    max-width: 2000;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: -450px;
+}
+
+.info-texto3 {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: right;
+    max-width: 640px;
+    margin-right: 10px;
+}
+
+.info-texto3 h1 {
+    margin-bottom: 10px; 
+    text-align: left; 
+    line-height: 1.2;
+}
+
+.info-texto4 {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto 40px auto;
+    margin-right: 65px;
+    padding: 0;
+    max-width: 1100px;
+    margin-top: -20px;
+    text-align: right;
+}
+
+.img-coluna-3 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    margin: auto;
+    max-width: 1100px;
+    flex-wrap: wrap;
+}
+
+.olhoverde {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 110px;
+}
+
+.texto-listado {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+    margin-right: -5px;
+    max-width: 640px;
+}
+
+/* ------------- */
+
+ .faq {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 100px auto; 
+    font-family: 'Saira', sans-serif;
+}
+
+.faq h1 {
+    font-weight: 130;
+    text-align: center;
+}
+
+.faq details summary {
+    list-style: none;
+    padding: 2%;
+    border-bottom: 1.5px solid black;
+    font-weight: 130;
+    text-align: left;
+    cursor: pointer;
+}
+
+.faq details summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq details summary::after {
+    content: "\f067"; /* icone "+"*/
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    float: right;
+}
+
+.faq details[open] summary::after {
+    content: "\f068"; /* icone "-"*/
+}
+
+.faq details p {
+    background-color: white;
+    color: black;
+    text-align: left;
+    font-weight: 200;
+    padding: 10px;
+    margin: 0;
+}        
+
+/*SEÇÃO DA EQUIPE*/
+.equipe {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Equipe - Destaque */
+.equipe-titulo {
+    text-align: center;
+    font-size: 2.2rem;
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 40px 0 30px 0;
+    font-weight: 400;
+}
+.equipe-titulo strong {
+    font-weight: 700;
+    font-style: italic;
+}
+
+.equipe-destaque {
+    display: flex;
+    align-items: center;
+    background: #8e217d;
+    border-radius: 12px;
+    padding: 40px 40px 40px 60px;
+    margin-bottom: 40px;
+    color: #fff;
+    gap: 40px;
+}
+.equipe-destaque-foto {
+    width: 220px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 16px;
+    background: #fff;
+}
+.equipe-destaque-info h3 {
+    font-size: 2rem;
+    margin: 0 0 8px 0;
+    font-weight: 700;
+}
+.equipe-destaque-info .funcao {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.equipe-destaque-info p {
+    margin: 0 0 10px 0;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Equipe - Cards */
+.equipe-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px 32px;
+    margin: 0 auto 60px auto;
+    max-width: 900px;
+}
+.equipe-card {
+    display: flex;
+    align-items: center;
+    border-radius: 100px 18px 18px 100px;
+    /* padding: 22px 28px; */
+    gap: 18px;
+    color: #fff;
+    min-height: 120px;
+}
+.equipe-card.amarelo {
+    background: #f7b32b;
+}
+.equipe-card.roxo {
+    background: #8e217d;
+}
+.equipe-card-foto {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: #fff;
+}
+.equipe-card h4 {
+    margin: 0 0 6px 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.equipe-card .funcao {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.equipe-card p {
+    margin: 0;
+    font-size: 0.98rem;
+    font-weight: 400;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+    .equipe-destaque {
+        flex-direction: column;
+        padding: 30px 10px;
+        gap: 20px;
+    }
+    .equipe-cards {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+}
+

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LTD Início</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira:wght@400;600;700&display=swap">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="logos-prin">
+            <img class="img-wyden" src="../image-site/logo_wyden_branco.png" alt="logo-wyden">
+        </div>
+        <ul class="nav-conteiner">
+            <li><a href="../../LTD-0.4/">Início</a></li>
+            <li><a href="../mapa">Mapa</a></li>
+            <li><a href="../educacional">Educacional</a></li>
+            <li><a href="../games">Games</a></li>
+            <li><a href="../sobre">Sobre</a></li>
+            <li><a href="../eventos" class="selecionado">Eventos</a></li>
+        </ul>
+    </header>
+
+<body>
+    <div class="container">
+            <img class="imagem-inicio" src="../image-site/festival.png" alt="imagem Eventos">
+            <div class="titulo_img">
+                <h1> 
+                  EVENTOS
+                </h1>
+            </div>
+        </div>
+
+</body>
+
+<main>
+     
+       <section class="eventos">
+            <h2>Próximos Eventos</h2>
+
+            <div class="search-box">
+                <input type="text" placeholder="🔍 Pesquisar eventos...">
+            </div>
+
+            <p>
+                Confira os próximos eventos do LTD. Aqui você encontra palestras, workshops, encontros e muito mais.
+                Fique por dentro de todas as atividades e não perca nenhuma oportunidade de aprendizado.
+            </p>
+
+            <div class="eventos-grid">
+                <div class="eventos-card">
+                    <img src="../image-site/eventos.jpeg" alt="Evento 1">
+                    <p>Evento 1</p>
+                </div>
+                <div class="eventos-card">
+                    <img src="../image-site/eventos.jpeg" alt="Evento 2">
+                    <p>Evento 2</p>
+                </div>
+                <div class="eventos-card">
+                    <img src="../image-site/eventos.jpeg" alt="Evento 3">
+                    <p>Evento 3</p>
+                </div>
+                <div class="eventos-card">
+                    <img src="../image-site/eventos.jpeg" alt="Evento 4">
+                    <p>Evento 4</p>
+                </div>
+                <div class="eventos-card">
+                    <img src="../image-site/eventos.jpeg" alt="Evento 5">
+                    <p>Evento 5</p>
+                </div>
+                <div class="eventos-card">
+                    <img src="../image-site/eventos.jpeg" alt="Evento 6">
+                    <p>Evento 6</p>
+                </div>
+                <div class="eventos-card">
+                    <img src="../image-site/eventos.jpeg" alt="Evento 7">
+                    <p>Evento 7</p>
+                </div>
+                <div class="eventos-card">
+                    <img src="../image-site/eventos.jpeg" alt="Evento 8">
+                    <p>Evento 8</p>
+                </div>
+                <div class="eventos-card">
+                    <img src="../image-site/eventos.jpeg" alt="Evento 9">
+                    <p>Evento 9</p>
+                </div>
+                <div class="eventos-card">
+                    <img src="../image-site/eventos.jpeg" alt="Evento 10">
+                    <p>Evento 10</p>
+                </div>
+            </div>
+        </section>
+
+</main>
+
+    <footer>
+        <div class="imagem-footer">
+            <div class="imagem-footer-conteudo">
+                <h1>RECEBA MAIS INFORMAÇÕES</h1>
+                <p>Preencha o campo abaixo para receber mais informações sobre o projeto.</p>
+                <button onclick="mostrarPopup()" class="botao-footer">Cadastre-se Aqui!</button>
+                <div id="popup-overlay" class="popup-overlay">
+                    <div class="popup-content">
+                        <div class="popup-body">
+                            <div class="aviso-imagem-conteudo">
+                                <img src="../image-site/LTD Logo branca 2 cadastro.png" alt="Logo LTD" class="popup-logo">
+                            </div>
+                            <div class="aviso-texto">
+                                <div class="texto1">
+                                    <p>Cadastre-se para receber novidades!</p>
+                                </div>
+                                <form class="popup-form" action="../backend/cadastro.php" method="POST">
+                                    <div class="form-group">
+                                        <label for="nome">Nome:</label>
+                                        <input type="text" id="nome" name="nome" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="idade">Idade:</label>
+                                        <input type="number" id="idade" name="idade" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email:</label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+                                    <button type="submit" class="submit-btn">Cadastrar</button>
+                                </form>
+                                <button type="button" class="close-btn" onclick="fecharPopup()">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../script.js"></script>
+        <div class="rodape-conteudo">
+            <img class="logo-footer" src="../image-site/logo_wyden_branco.png" alt="Logo Wyden">
+
+            <hr class="divisor">
+
+            <div class="colunas">
+                <div class="coluna">
+                    <strong>Informações</strong><br>
+                    naaf.faci@faculdadeideal.edu.br<br>
+                    (91) 3323-6000<br><br>
+                    Tv. Tupinambás, nº 461, Bairro Batista Campos Belém - PA.<br>
+                     66025-610<br>
+                </div>
+            </div>
+            <div class="icones-sociais">
+                <a href="https://www.instagram.com/ltd.faciwyden" target="_blank" rel="noopener" title="Instagram da LTD FACI Wyden">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2025 Wyden. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

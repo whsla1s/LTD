@@ -1,0 +1,252 @@
+@import url('style.css');
+
+body, main {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 50px auto;
+    gap: 30px;
+}
+
+.conteiner-inicio {
+    width: 100%;
+}
+
+.texto {
+    flex: 1.0;
+    font-family: 'Saira', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.imagem {
+    flex-shrink: 0;
+}
+
+/* imagem do inicio */
+.imagem-inicio{
+    width: 100%;
+    display: block;
+    height: auto;
+    margin-top: 0; 
+}
+
+/* Estilização direta da imagem */
+.imagem #imagem1 {
+    width: 400px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: -70px;
+}
+
+.titulo-projeto {
+    text-align: center;
+    color: var(--roxo);
+    font-size: 3em;
+    margin-top: 50px;
+    font-family: 'Saira', sans-serif;
+}
+
+.imagem2 {
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ---- Carrossel ---- */
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.container.carousel-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  gap: 4rem;
+  background-color: #fff;
+  color: #000;
+  max-width: 1200px;
+  overflow: hidden;
+}
+
+.card-container a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.text-section {
+  flex-shrink: 0;
+  min-width: 150px;
+  text-align: center;
+}
+
+.text-section h2 {
+  color: #880E4F;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.text-section a {
+  color: #880E4F;
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.text-section a::after {
+  content: "→";
+  margin-left: 0.5rem;
+}
+
+/* ALTERAÇÃO: Wrapper agora é uma coluna para conter o carrossel e a instrução */
+.carousel-wrapper {
+  display: flex;
+  flex-direction: column; /* Para a instrução ficar abaixo */
+  align-items: center;
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.card-container {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1rem;
+  cursor: grab;
+  user-select: none;
+  width: 100%; /* Garante que o container ocupe o espaço */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.card-container.dragging {
+    cursor: grabbing;
+    scroll-snap-type: none;
+}
+
+.card-container::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 200px;
+  height: 320px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  border-radius: 10px;
+}
+
+.card span {
+  position: relative;
+  z-index: 1;
+}
+
+/* NOVO ESTILO: Para a mensagem instrutiva */
+.carousel-instruction {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+
+/* ======================================================= */
+/* CÓDIGO RESPONSIVO PARA MOBILE */
+/* ======================================================= */
+
+@media (max-width: 992px) {
+
+    main .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        gap: 25px;
+        margin: 25px auto;
+    }
+    
+    main .container.carousel-section {
+        flex-direction: column;
+        padding: 2rem 1rem;
+        gap: 2rem;
+    }
+
+    .texto {
+        font-size: 18px;
+        line-height: 1.7;
+        text-align: justify;
+        padding: 0 15px;
+    }
+
+    .imagem #imagem1 {
+        display: none;
+    }
+    
+    .imagem2 {
+        margin-top: 20px;
+    }
+
+    .titulo-projeto {
+        font-size: 2.2em;
+        padding: 0 20px;
+    }
+    
+    .text-section {
+        text-align: center;
+    }
+    .text-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .carousel-wrapper {
+        width: 100%;
+    }
+
+    .card-container {
+        padding: 0 10px; 
+    }
+
+    .card {
+        width: 180px;
+        height: 300px;
+    }
+    
+    /* Esconde a instrução no mobile */
+    .carousel-instruction {
+        display: none;
+    }
+}

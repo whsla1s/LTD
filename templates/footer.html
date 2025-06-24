@@ -1,0 +1,58 @@
+<div class="imagem-footer">
+    <div class="imagem-footer-conteudo">
+        <h1>RECEBA MAIS INFORMAÇÕES</h1>
+        <p>Preencha o campo abaixo para receber mais informações sobre o projeto.</p>
+        <button onclick="mostrarPopup()" class="botao-footer">Cadastre-se Aqui!</button>
+        <div id="popup-overlay" class="popup-overlay">
+            <div class="popup-content">
+                <div class="popup-body">
+                    <div class="aviso-imagem-conteudo">
+                        <img src="../image-site/LTD Logo branca 2 cadastro.png" alt="Logo LTD" class="popup-logo">
+                    </div>
+                    <div class="aviso-texto">
+                        <div class="texto1">
+                            <p>Cadastre-se para receber novidades!</p>
+                        </div>
+                        <form class="popup-form" action="../backend/cadastro.php" method="POST">
+                            <div class="form-group">
+                                <label for="nome">Nome:</label>
+                                <input type="text" id="nome" name="nome" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="idade">Idade:</label>
+                                <input type="number" id="idade" name="idade" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <button type="submit" class="submit-btn">Cadastrar</button>
+                        </form>
+                        <button type="button" class="close-btn" onclick="fecharPopup()">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="rodape-conteudo">
+    <img class="logo-footer" src="../image-site/logo_wyden_branco.png" alt="Logo Wyden">
+    <hr class="divisor">
+    <div class="colunas">
+        <div class="coluna">
+            <strong>Informações</strong><br>
+            naaf.faci@faculdadeideal.edu.br<br>
+            (91) 3323-6000<br><br>
+            Tv. Tupinambás, nº 461, Bairro Batista Campos Belém - PA.<br>
+            66025-610<br>
+        </div>
+    </div>
+    <div class="icones-sociais">
+        <a href="https://www.instagram.com/ltd.faciwyden?igsh=dXgzbzZqMGxhOTdh" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2025 Wyden. Todos os direitos reservados.</p>
+    </div>
+</div>

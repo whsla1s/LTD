@@ -1,70 +1,211 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <title>prototipo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LTD Início</title>
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira:wght@400;600;700&display=swap">
 </head>
+
 <body>
+
     <header class="cabecalho">
-        <img class="img-logo" src="./imagens site/logo_wyden_branco.png" alt="logo-wyden">
-        <ul class="nav-conteiner">
-            <li><a href="#" onclick="mostrarTela('home')">Início</a></li>
-            <li><a href="#" onclick="mostrarTela('educacional')">Educacional</a></li>
-            <li><a href="#" onclick="mostrarTela('game')">Game</a></li>
-            <li><a href="#" onclick="mostrarTela('mapa')">Mapa</a></li>
-            <li><a href="#" onclick="mostrarTela('evento')">Evento</a></li>
-            <li><a href="#" onclick="mostrarTela('informacoes')">Informações</a></li>
+        <button class="btn-mobile-menu" id="open-menu-btn" aria-label="Abrir Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="logos-prin">
+            <a href="">
+                <img class="img-wyden" src="image-site/logo_wyden_branco.png" alt="logo-wyden">
+            </a>
+        </div>
+
+        <ul class="nav-conteiner-desktop">
+            <li><a href="" id="nav-index">Início</a></li>
+            <li><a href="mapa" id="nav-mapa">Mapa</a></li>
+            <li><a href="educacional" id="nav-educacional">Educacional</a></li>
+            <li><a href="games" id="nav-games">Games</a></li>
+            <li><a href="sobre" id="nav-sobre">Sobre</a></li>
+            <li><a href="eventos" id="nav-eventos">Eventos</a></li>
         </ul>
-      </header>
+    </header>
+
+    <aside class="sidebar-menu" id="sidebar-menu">
+        <div class="sidebar-header">
+            <span>Menu</span>
+            <button class="btn-close-menu" id="close-menu-btn" aria-label="Fechar Menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="nav-conteiner">
+            <li><a href="">Início</a></li>
+            <li><a href="mapa">Mapa</a></li>
+            <li><a href="educacional">Educacional</a></li>
+            <li><a href="games">Games</a></li>
+            <li><a href="sobre">Sobre</a></li>
+            <li><a href="eventos">Eventos</a></li>
+        </ul>
+    </aside>
+
+    <div class="menu-overlay" id="menu-overlay"></div>
 
     <main>
-        <section id="home" class="tela ativa">
+        <div class="conteiner-inicio">
+            <img class="imagem-inicio" src="image-site/opressor.png" alt="imagem da batista campos">
+        </div>
 
-    
-        </section>
+        <div class="container">
+            <div class="texto">
+                <p>
+                    A Wyden é um grupo educacional fundado em 2009, que integra 11 instituições de ensino superior no
+                    Brasil,
+                    oferecendo mais de 100 cursos entre Graduação, Pós-Graduação e Mestrado. Reconhecida pela
+                    flexibilidade
+                    (Presencial, EAD, Semipresencial e modelos híbridos), destaca-se por programas internacionais com
+                    professores
+                    estrangeiros e parcerias para intercâmbio, além de orientação de carreira personalizada.
+                </p>
+                <br>
+                <p>
+                    Com nota máxima no MEC, a Wyden possui 50 mil alunos ativos e infraestrutura moderna, alinhando
+                    teoria e prática desde o primeiro ano.
+                    Sua missão é entregar "a melhor experiência de aprendizagem" através de tecnologia e qualidade
+                    acadêmica, transformando vidas e fomentando o desenvolvimento regional.
+                </p>
+            </div>
 
-        <section id="educacional" class="tela">
-            <h2>Educacional</h2>
-            <h3><a href="#" onclick="mostrarTela('matematica')">Matemática</a></h3>
-            <h3><a href="#" onclick="mostrarTela('portugues')">Português</a></h3>
-            <h3><a href="#" onclick="mostrarTela('historia')">História</a></h3>
-            <h3><a href="#" onclick="mostrarTela('ciencias')">Ciências</a></h3>
-            <h3><a href="#" onclick="mostrarTela('geografia')">Geografia</a></h3>
-        </section>
-        
-        <section id="mapa" class="tela">
-            <h2>Mapa</h2>
-            <h3><a href="https://via.placeholder.com/300x200" target="_blank">Mapa da Escola</a></h3>
-            <h3><a href="https://via.placeholder.com/300x200" target="_blank">Mapa da Cidade</a></h3>
-            <h3><a href="https://via.placeholder.com/300x200" target="_blank">Mapa da Biblioteca</a></h3>
-        </section>
+            <div class="imagem">
+                <img id="imagem1" src="image-site/unidade_faci__inicial.webp" alt="Auditório">
+            </div>
+        </div>
 
-        <section id="game" class="tela">
-            <h2>Game</h2>
-            <p>Aqui você encontra jogos educativos e interativos.</p>
-        </section>
+        <img class="imagem2" src="image-site/coleta-seletiva.jpeg" alt="Coleta Seletiva">
 
-        <section id="mapa" class="tela">
-            <h2>Mapa</h2>
-            <ul>
-                <li><a href="https://via.placeholder.com/300x200" target="_blank">Mapa da Escola</a></li>
-                <li><a href="https://via.placeholder.com/300x200" target="_blank">Mapa da Cidade</a></li>
-                <li><a href="https://via.placeholder.com/300x200" target="_blank">Mapa da Biblioteca</a></li>
-            </ul>
-        </section>
+        <h1 class="titulo-projeto">Saiba um pouco mais sobre o projeto</h1>
 
-        <section id="evento" class="tela">
-            <h2>Evento</h2>
-            <p>Confira os eventos mais recentes da escola!</p>
-        </section>
+        <div class="container">
+            <div class="texto">
+                <p>
+                    Este projeto é uma iniciativa do Laboratório de Tecnologia e Desenvolvimento (LTD), um espaço de inovação da Faculdade
+                    Faci Wyden. Aqui, nós, estudantes de tecnologia, colocamos nosso conhecimento em prática para criar soluções reais para
+                    a comunidade. Acreditamos que a teoria só faz sentido quando transforma a realidade.
+                </p>
+                <br>
+                <p>
+                    Incomodados com a dificuldade de encontrar locais para o descarte correto de resíduos em nossa cidade, decidimos unir
+                    tecnologia e impacto social para enfrentar esse desafio. O resultado é esta plataforma, onde nosso objetivo é conectar a
+                    população de Belém aos pontos de reciclagem, além de educar e engajar a todos por meio de conteúdo, jogos e eventos.
+                    Este site é o nosso jeito de aplicar o que aprendemos para fomentar o desenvolvimento regional e construir um futuro
+                    mais sustentável.
+                </p>
+            </div>
+        </div>
 
-        <section id="informacoes" class="tela">
-            <h2>Informações</h2>
-            <p>Informações gerais sobre o projeto e a equipe envolvida.</p>
-        </section>
+        <div class="container carousel-section">
+            <div class="text-section">
+                <h2>VEJA<br>TAMBÉM</h2>
+                <a href="#">Confira</a>
+            </div>
+
+            <div class="carousel-wrapper">
+                <div class="card-container" id="carousel">
+                    <a href="mapa">
+                        <div class="card" style="background-image: url('image-site/mapaaba.png');"><span>Mapas de
+                                Coleta</span></div>
+                    </a>
+                    <a href="educacional">
+                        <div class="card"
+                            style="background-image: url('image-site/WhatsApp\ Image\ 2025-05-24\ at\ 04.59.40.jpeg');">
+                            <span>Educacional</span>
+                        </div>
+                    </a>
+                    <a href="games">
+                        <div class="card" style="background-image: url('image-site/games.png');"><span>Games</span>
+                        </div>
+                    </a>
+                    <a href="sobre">
+                        <div class="card"
+                            style="background-image: url('image-site/WhatsApp\ Image\ 2025-05-24\ at\ 04.59.40\ \(1\).jpeg');">
+                            <span>Sobre</span>
+                        </div>
+                    </a>
+                    <a href="eventos">
+                        <div class="card" style="background-image: url('image-site/festival.png');"><span>Eventos</span>
+                        </div>
+                    </a>
+                </div>
+                <p class="carousel-instruction">Clique e arraste com o mouse para ver mais</p>
+            </div>
+        </div>
     </main>
 
-    <script src="script.js"></script>
+    <footer>
+        <div class="imagem-footer">
+            <div class="imagem-footer-conteudo">
+                <h1>RECEBA MAIS INFORMAÇÕES</h1>
+                <p>Preencha o campo abaixo para receber mais informações sobre o projeto.</p>
+                <button onclick="mostrarPopup()" class="botao-footer">Cadastre-se Aqui!</button>
+                <div id="popup-overlay" class="popup-overlay">
+                    <div class="popup-content">
+                        <div class="popup-body">
+                            <div class="aviso-imagem-conteudo">
+                                <img src="image-site/LTD Logo branca 2 cadastro.png" alt="Logo LTD" class="popup-logo">
+                            </div>
+                            <div class="aviso-texto">
+                                <div class="texto1">
+                                    <p>Cadastre-se para receber novidades!</p>
+                                </div>
+                                <form class="popup-form" action="backend/cadastro.php" method="POST">
+                                    <div class="form-group">
+                                        <label for="nome">Nome:</label>
+                                        <input type="text" id="nome" name="nome" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="idade">Idade:</label>
+                                        <input type="number" id="idade" name="idade" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email:</label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+                                    <button type="submit" class="submit-btn">Cadastrar</button>
+                                </form>
+                                <button type="button" class="close-btn" onclick="fecharPopup()">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rodape-conteudo">
+            <img class="logo-footer" src="image-site/logo_wyden_branco.png" alt="Logo Wyden">
+            <hr class="divisor">
+            <div class="colunas">
+                <div class="coluna">
+                    <strong>Informações</strong><br>
+                    naaf.faci@faculdadeideal.edu.br<br>
+                    (91) 3323-6000<br><br>
+                    Tv. Tupinambás, nº 461, Bairro Batista Campos Belém - PA.<br>
+                    66025-610<br>
+                </div>
+            </div>
+            <div class="icones-sociais">
+                <a href="https://www.instagram.com/ltd.faciwyden?igsh=dXgzbzZqMGxhOTdh" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Wyden. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+    <script src="carrossel.js"></script>
 </body>
+
 </html>

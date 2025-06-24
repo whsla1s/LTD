@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Reciclagem</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="quiz-container" id="quiz-container">
+
+        <div id="start-screen">
+            <h1>Quiz da Sustentabilidade</h1>
+            <p>Teste seus conhecimentos sobre reciclagem e práticas sustentáveis. Serão 10 perguntas sorteadas
+                aleatoriamente.</p>
+            <button id="start-btn" class="btn">Começar!</button>
+        </div>
+
+        <div id="quiz-screen" class="hide">
+            <div id="quiz-header">
+                <div id="question-counter"></div>
+                <div id="score-display">Pontos: <span id="score">0</span></div>
+            </div>
+            <div id="question-text"></div>
+            <div id="answer-buttons" class="btn-grid">
+            </div>
+        </div>
+
+        <div id="end-screen" class="hide">
+            <h2>Quiz Finalizado!</h2>
+            <p id="score-text"></p>
+            <button id="restart-btn" class="btn">Jogar Novamente</button>
+        </div>
+
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>

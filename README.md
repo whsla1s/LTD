@@ -38,7 +38,7 @@ Para rodar este projeto em sua máquina local, você precisará de um ambiente d
 
 **1. Clone o repositório:**
 
-      git clone [URL-DO-SEU-REPOSITÓRIO]
+      git clone [https://github.com/whsla1s/LTD.git]
 
 **2. Configure o Banco de Dados:**
   * Inicie seu servidor Apache e MySQL.
@@ -48,7 +48,7 @@ Para rodar este projeto em sua máquina local, você precisará de um ambiente d
 
 **3. Inicie o Projeto:**
   * Mova a pasta do projeto para o diretório htdocs (ou similar) do seu servidor local.
-  * Abra o navegador e acesse http://localhost/nome-da-pasta-do-projeto/.
+  * Abra o navegador e acesse http://localhost/LTD-main/.
 
 # Equipe
 * **Alexandre Abreu** - Orientador
@@ -61,6 +61,4 @@ Para rodar este projeto em sua máquina local, você precisará de um ambiente d
 * **Gustavo Henrique** - Design
 
 (Conforme a seção "Conheça a equipe!" na página sobre/index.html)
-
-#
 

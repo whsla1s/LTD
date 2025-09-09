@@ -12,15 +12,15 @@ Acreditamos que ações locais, apoiadas pela tecnologia, são fundamentais para
 
 # Funcionalidades Principais
 Nossa plataforma foi desenhada para ser uma ferramenta central no incentivo à reciclagem em Belém, oferecendo:
-- **🗺️Mapa Interativo:** Localize facilmente os pontos de coleta seletiva disponíveis na cidade. O sistema também permite que os usuários sugiram novos locais para
+- **Mapa Interativo:** Localize facilmente os pontos de coleta seletiva disponíveis na cidade. O sistema também permite que os usuários sugiram novos locais para
 a instalação de lixeiras.
-- **📚Área Educacional:** Conteúdo completo sobre sustentabilidade, biodiversidade, energias renováveis, e guias práticos sobre como fazer a coleta seletiva e a compostagem
+- **Área Educacional:** Conteúdo completo sobre sustentabilidade, biodiversidade, energias renováveis, e guias práticos sobre como fazer a coleta seletiva e a compostagem
 corretamente.
-- **🎮Games Educativos:** Aprender pode ser divertido! Desenvolvemos jogos como o Snake Game temático e um Quiz para testar e expandir seus conhecimentos sobre reciclagem de
+- **Games Educativos:** Aprender pode ser divertido! Desenvolvemos jogos como o Snake Game temático e um Quiz para testar e expandir seus conhecimentos sobre reciclagem de
 forma interativa.
-- **🗣️Cadastro e Engajamento:** Um sistema de cadastro permite que os usuários salvem suas pontuações nos jogos, participem de rankings e recebam novidades sobre o projeto
+- **Cadastro e Engajamento:** Um sistema de cadastro permite que os usuários salvem suas pontuações nos jogos, participem de rankings e recebam novidades sobre o projeto
 e eventos.
-- **📅Página de Eventos:** Fique por dentro de palestras, workshops e outras atividades relacionadas à sustentabilidade e ao meio ambiente.
+- **Página de Eventos:** Fique por dentro de palestras, workshops e outras atividades relacionadas à sustentabilidade e ao meio ambiente.
 
 # Tecnologias Utilizadas
 Este projeto foi construído com uma combinação de tecnologias web modernas, visando uma experiência de usuário fluida e funcional.

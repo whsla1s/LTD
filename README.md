@@ -10,15 +10,11 @@ A iniciativa parte do princípio de que ações locais, apoiadas pela tecnologia
 # Funcionalidades Principais
 A plataforma foi desenhada para ser uma ferramenta central no incentivo à reciclagem em Belém, oferecendo:
 - **Mapa Interativo:** Permite localizar facilmente os pontos de coleta seletiva disponíveis na cidade. O sistema também possibilita que os usuários sugiram novos locais para a instalação de lixeiras.
-
 - **Área Educacional:** Oferece conteúdo completo sobre sustentabilidade, biodiversidade, energias renováveis, e guias práticos sobre como fazer a coleta seletiva e a compostagem corretamente.
-
 - **Games Educativos:** Para um aprendizado divertido, foram desenvolvidos jogos como o Snake Game temático e um Quiz, que testam e expandem os conhecimentos sobre reciclagem de forma interativa.
-
 - **Cadastro e Engajamento:** Um sistema de cadastro permite aos usuários salvar pontuações nos jogos, participar de rankings e receber novidades sobre o projeto e eventos.
-
 - **Página de Eventos:** Um espaço para se manter atualizado sobre palestras, workshops e outras atividades relacionadas à sustentabilidade e ao meio ambiente.
-  
+
 # Tecnologias Utilizadas
 Este projeto foi construído com uma combinação de tecnologias web modernas, visando uma experiência de usuário fluida e funcional.
 * **Front-End:**
@@ -30,32 +26,3 @@ Este projeto foi construído com uma combinação de tecnologias web modernas, v
   - PHP (para processar cadastros de usuários, salvar pontuações e servir dados para o mapa)
   - MySQL: Banco de dados para armazenar informações de usuários, locais e rankings.
  
-# Como Executar o Projeto Localmente
-Para rodar este projeto em sua máquina local, você precisará de um ambiente de servidor web com suporte a PHP e MySQL (como XAMPP, WAMP ou MAMP).
-
-**1. Clone o repositório:**
-
-      git clone [https://github.com/whsla1s/LTD.git]
-
-**2. Configure o Banco de Dados:**
-  * Inicie seu servidor Apache e MySQL.
-  * Crie um banco de dados chamado ltd_db.
-  * Importe a estrutura das tabelas (usuarios, ranking, locais) para o banco de dados. Você pode usar os arquivos .php do backend como referência para criar as tabelas.
-  * Verifique as credenciais de conexão no arquivo backend/conn.php e ajuste se necessário (servidor, usuário, senha).
-
-**3. Inicie o Projeto:**
-  * Mova a pasta do projeto para o diretório htdocs (ou similar) do seu servidor local.
-  * Abra o navegador e acesse http://localhost/LTD-main/.
-
-# Equipe
-* **Alexandre Abreu** - Orientador
-* **Laís Rocha** - Front-End
-* **Felipe Fayal** - Front-End
-* **Matheus Carvalho** - Front-End
-* **Davi Assaf** - Full Stack
-* **Beatriz Cardozo** - Back-End
-* **Thiago Maues** - Design
-* **Gustavo Henrique** - Design
-
-(Conforme a seção "Conheça a equipe!" na página sobre/index.html)
-

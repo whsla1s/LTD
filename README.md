@@ -1,7 +1,7 @@
 # Projeto LTD 25.1: Conscientização e Ação para a Coleta Seletiva #
 
 # Sobre o Projeto
-O **Projeto LTD (Laboratório de Transformação Digital)** é uma iniciativa acadêmica desenvolvida por estudantes de tecnologia da Faculdade Faci Wyden, em Belém/PA. A missão do projeto é aplicar o conhecimento tecnológico para gerar impacto social positivo, sendo esta a sua primeira grande realização.
+O **Projeto LTD (Laboratório de Transformação Digital)** é uma iniciativa acadêmica desenvolvida, em Belém/PA. A missão do projeto é aplicar o conhecimento tecnológico para gerar impacto social positivo, sendo esta a sua primeira grande realização.
 
 A plataforma foi criada a partir da necessidade de facilitar a localização de pontos de descarte correto de resíduos na cidade. O objetivo é oferecer uma ferramenta completa e interativa que incentive e simplifique a prática da coleta seletiva. Além de ajudar a localizar ecopontos, o site busca educar, engajar e conscientizar a população sobre a importância de práticas sustentáveis, especialmente no contexto estratégico de Belém como cidade-sede da COP30 em 2025.
 

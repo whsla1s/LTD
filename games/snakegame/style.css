@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Saira:wght@400;700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Saira', sans-serif;
+  font-family: "Saira", sans-serif;
 }
 
 body {
@@ -294,7 +294,7 @@ canvas {
   padding: 15px;
   border-radius: 10px;
   color: white;
-  font-family: 'Saira', sans-serif;
+  font-family: "Saira", sans-serif;
   width: 300px;
   max-height: 80vh;
   display: flex;
@@ -364,7 +364,6 @@ canvas {
   background: #00ffff;
 }
 
-
 .ranking-item {
   display: flex;
   justify-content: space-between;
@@ -378,8 +377,26 @@ canvas {
   border-bottom: none;
 }
 
+.ranking-item .first-position {
+  color: gold;
+  -webkit-text-shadow: 0 0 5px gold;
+  text-shadow: 0 0 5px gold;
+}
+
+.ranking-item .second-position {
+  color: silver;
+  -webkit-text-shadow: 0 0 5px silver;
+  text-shadow: 0 0 5px silver;
+}
+
+.ranking-item .third-position {
+  color: #cd7f32;
+  -webkit-text-shadow: 0 0 5px #cd7f32;
+  text-shadow: 0 0 5px #cd7f32;
+}
+
 .ranking-item .position {
-  color: #ffcc00;
+  color: white;
   font-weight: bold;
   min-width: 40px;
 }
@@ -448,7 +465,7 @@ canvas {
   max-width: 320px;
   /* Maximum width */
   color: white;
-  font-family: 'Saira', sans-serif;
+  font-family: "Saira", sans-serif;
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
   z-index: 3;
   /* Above buttons */
@@ -544,7 +561,7 @@ canvas {
 /* ----- */
 
 @media (max-width: 1024px) {
-    .ranking-container {
-        display: none;
-    }
+  .ranking-container {
+    display: none;
+  }
 }

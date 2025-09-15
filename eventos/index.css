@@ -10,7 +10,7 @@
     width: 100%;
     display: block;
     height: auto;
-    margin-top: 0; /* Alinhado com o header sticky */
+    margin-top: 0; 
 }
 
 .titulo_img {
@@ -112,13 +112,22 @@
 
 @media (max-width: 992px) {
 
-    .titulo_img h1 {
-        font-size: 45px;
-        text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    .titulo_img {
+        display: none;
     }
 
     .eventos {
-        padding: 40px 15px;
+        background-color: white;
+        border-radius: 16px;
+        padding: 25px;
+        position: relative;
+        margin-top: -50px; 
+        z-index: 10;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
     }
     
     .eventos h2 {
@@ -126,26 +135,27 @@
     }
 
     .search-box input {
-        width: 90%;
-        max-width: 300px;
+        width: 100%; 
     }
 
     .eventos p {
-        font-size: 17px;
-        line-height: 1.7;
+        font-size: 1rem;
+        line-height: 1.6;
     }
-    
+
     .eventos-grid {
         padding: 0;
-        gap: 15px;
+        gap: 20px; 
     }
     
     .eventos-card {
-        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        box-shadow: none;
+        border: 1px solid #eee;
+        border-radius: 12px; 
     }
 
     .eventos-card p {
         font-size: 16px;
-        padding: 12px;
+        padding: 15px;
     }
 }

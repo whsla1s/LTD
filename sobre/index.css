@@ -1,4 +1,4 @@
-/*PRIMEIRA PARTE*/
+/* ======================================================= */
 .info-container {
     display: flex;
     align-items: flex-start;
@@ -39,7 +39,6 @@
     font-weight: 600;
 }
 
-/* conteudo */
 .info-texto h1 {
     margin-bottom: 10px;
 }
@@ -84,33 +83,30 @@
     max-width: 940px;
 }
 
-/* ALTERAÇÃO: Layout da coluna da COP30 corrigido */
 .img-coluna-2 {
     display: flex;
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: center; /* Centraliza o bloco na página */
-    gap: 40px; /* Adiciona um espaço entre a imagem e o texto */
+    align-items: center; 
+    justify-content: center; 
+    gap: 40px; 
     margin: 40px auto;
     flex-wrap: wrap;
     max-width: 1100px;
     padding: 0 20px;
 }
 
-/* ALTERAÇÃO: Removida a margem negativa */
 .cop30 {
     width: 450px;
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    margin: 0; /* Margem resetada */
+    margin: 0; 
 }
 
-/* ALTERAÇÃO: Alinhamento do texto corrigido */
 .info-texto3 {
     flex: 1;
     font-size: 16px;
     line-height: 1.6;
-    text-align: left; /* Alinhamento corrigido para esquerda */
+    text-align: left; 
     max-width: 600px;
     margin: 0;
 }
@@ -279,22 +275,42 @@
 /* ======================================================= */
 
 @media (max-width: 992px) {
-
-    .imagem-inicio {
-        margin-top: 0;
-    }
-    .titulo_img h1 {
-        font-size: 45px;
-        text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    
+    .titulo_img {
+        display: none;
     }
 
-    .info-container, .img-coluna-2, .img-coluna-3 {
+    .info-container {
+        background-color: white;
+        border-radius: 16px;
+        padding: 25px;
+        position: relative;
+        margin-top: -50px;  
+        z-index: 10;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
         flex-direction: column;
         align-items: center;
         gap: 25px;
-        padding: 0 15px;
     }
 
+    .img-coluna-2, .img-coluna-3, .equipe, .faq {
+        width: 90%;
+        margin: 30px auto;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    .img-coluna-2, .img-coluna-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+    
     .info-texto, .info-container img, .info-texto2, .cop30, .info-texto3, .info-texto4, .olhoverde, .texto-listado {
         margin: 0; 
         max-width: 100%;
@@ -306,16 +322,7 @@
         text-align: center;
     }
 
-    .imagens-info { gap: 25px; }
-    .info-img, .coleta-divertida-img, .cop30, .olhoverde {
-        width: 90%;
-        height: auto;
-    }
-    .info-img { max-width: 250px; }
-    .coleta-divertida-img { max-width: 350px; }
-    .cop30 { max-width: 400px; }
-    .olhoverde { max-width: 200px; }
-
+    .equipe { padding: 0; } 
     .equipe-titulo { font-size: 1.8rem; }
     .equipe-destaque { flex-direction: column; padding: 30px 20px; text-align: center; }
     .equipe-cards { grid-template-columns: 1fr; }

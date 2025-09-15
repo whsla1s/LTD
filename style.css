@@ -27,7 +27,7 @@ body {
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1000; /* Z-index base para o cabeçalho */
+    z-index: 1000; 
 }
 
 .logo-prin a {
@@ -80,7 +80,6 @@ footer {
     font-family: var(--font-style);
 }
 
-/* Esconde por padrão os elementos mobile no desktop */
 .btn-mobile-menu, .sidebar-menu, .menu-overlay {
     display: none;
 }
@@ -92,7 +91,7 @@ footer {
     display: flex;
     width: 100%;
     min-height: 500px;
-    background-image: url('image-site/coletores-de-lixo.jpg');
+    background-image: url('image-site/coletores-de-lixo.webp');
     background-size: cover;
     background-position: center;
     padding: 20px 5vw;
@@ -206,7 +205,6 @@ footer {
     display: flex;
 }
 
-/* Centralização e tamanho maior do popup */
 .popup-content {
     background: #fff;
     color: black;
@@ -323,10 +321,12 @@ footer {
 
     .cabecalho {
         padding: 10px 15px;
-        position: sticky;
+        position: absolute;
         top: 0;
-        background-color: var(--roxo); 
-        z-index: 1000; /* Mantém o z-index consistente no mobile */
+        left: 0; 
+        width: 100%; 
+        background-color: transparent; 
+        z-index: 1000;
     }
 
     .nav-conteiner-desktop {
@@ -335,12 +335,14 @@ footer {
 
     .btn-mobile-menu {
         display: block;
-        font-size: 32px;
-        color: white;
-        background: transparent;
+        font-size: 40px;
+        color: var(--font-style); 
+        background: var(--roxo);
+        border-radius: 8px;
         border: none;
         cursor: pointer;
         padding: 5px;
+        z-index: 2001; 
     }
 
     .sidebar-menu {

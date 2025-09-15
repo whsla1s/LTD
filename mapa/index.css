@@ -1,21 +1,13 @@
 @import url('../config.css');
 
-/* ======================================================= */
-/* CORREÇÃO PARA O CABEÇALHO E CONTEÚDO NA PÁGINA DO MAPA (DESKTOP) */
-/* ======================================================= */
-@media (min-width: 993px) {
-    .cabecalho {
-        position: static; /* Faz o cabeçalho ocupar seu próprio espaço */
-        background-color: var(--roxo); /* Define o fundo roxo */
-    }
-
-    /* ALTERAÇÃO: Aumenta drasticamente a margem para criar mais "espaço branco" */
-    .main-container {
-        margin-top: 120px; 
-    }
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px; 
+    background-color: var(--roxo); 
+    color: white;
 }
-/* FIM DA CORREÇÃO */
-
 
 #map {
     height: 500px;
@@ -33,9 +25,10 @@
     flex-direction: row;
     gap: 20px;
     padding: 20px;
-    max-width: 1400px; /* Limita a largura máxima para telas muito grandes */
-    margin-left: auto;  /* Centraliza o container */
-    margin-right: auto; /* Centraliza o container */
+    max-width: 1400px; 
+    margin-left: auto;  
+    margin-right: auto; 
+    margin-top: 150px;
 }
 
 .leaflet-marker-icon.marcador-hover {
@@ -183,12 +176,20 @@
 /* ======================================================= */
 
 @media (max-width: 992px) {
-    
+
+    .cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px; 
+    background-color: var(--roxo); 
+    }
+
     .main-container {
         flex-direction: column;
         padding: 15px;
         gap: 15px;
-        margin-top: 0; /* Remove a margem extra no mobile */
+        margin-top: 100px; 
     }
 
     #map {
@@ -206,7 +207,6 @@
         font-size: 15px;
     }
 
-    /* --- Popup Modal (Aviso) --- */
     .modal-content {
         width: 95vw;
         max-width: 400px;
@@ -245,4 +245,20 @@
     .botao-modal::after {
         font-size: 16px;
     }
+  
+}
+
+@media (max-width: 992px) {
+
+  .pagina-mapa .cabecalho {
+    background-color: var(--roxo); 
+    border-bottom: 1px solid #e0e0e0; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); 
+  }
+
+  
+  .pagina-mapa .btn-mobile-menu {
+    color: var(--branco-escuro);
+  }
+
 }

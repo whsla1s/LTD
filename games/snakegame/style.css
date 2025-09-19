@@ -398,7 +398,6 @@ canvas {
 .ranking-item .position {
   color: white;
   font-weight: bold;
-  min-width: 40px;
 }
 
 .ranking-item .name {
@@ -565,3 +564,4 @@ canvas {
     display: none;
   }
 }
+
